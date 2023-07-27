@@ -25,7 +25,7 @@ env:
 
 mysql:
   auth:
-    rootPassword: dummy
+    rootPassword: root
     database: mydb
   primary:
     service:
@@ -33,3 +33,5 @@ mysql:
       nodePort: 32762
   fullnameOverride: docker-mysql
   initdbScriptsConfigMap: mydb-initdb-config
+mysql:
+  enabled: false

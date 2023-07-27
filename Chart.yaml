@@ -26,3 +26,4 @@ dependencies:
   - name: mysql
     version: "9.3.4"
     repository: "@bitnami"
+    condition: mysql.enabled
